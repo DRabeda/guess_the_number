@@ -4,11 +4,11 @@ import time
 print("Hey! You will play the guess the number game. Rules are simple. You have to enter", "\n",
 "value which will represent range from which the number will be chose ", "\n", "and then you will have number of attempts to guess the right number")
 
-time.sleep(5)
+time.sleep(2)
 
 print("Please, input number") 
 
-x = int(input())  #declare range 
+x = int(input())  #declare variable which be transformed to range 
 
 r = range(x)  #transofrm int to range 
 
@@ -16,7 +16,7 @@ r = range(x)  #transofrm int to range
 rand_num = (random.choice(r))
 
 attempts = 3 if x < 10 else 5 if x < 20 else 10 if x < 40  else 50
-print(attempts)
+print("You have " + str(attempts) + " attempts")
 
 while attempts > 0: 
     guess_number= int(input('Guess the number! '))
@@ -30,4 +30,3 @@ while attempts > 0:
 
 if attempts==0: 
     raise ValueError("Too many attempts!")
-    
