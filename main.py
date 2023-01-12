@@ -14,7 +14,6 @@ r = range(x)  #transofrm int to range
 
 
 rand_num = (random.choice(r))
-print(rand_num)
 
 attempts = 3 if x < 10 else 5 if x < 20 else 10 if x < 40  else 50
 print(attempts)
@@ -31,3 +30,4 @@ while attempts > 0:
 
 if attempts==0: 
     raise ValueError("Too many attempts!")
+    
